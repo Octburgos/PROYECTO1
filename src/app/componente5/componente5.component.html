@@ -1,0 +1,62 @@
+
+
+<label for="name"> NOMBRE </label>
+<input [(ngModel)]="nombre2" type="text" name="nombre" /> <br />
+<br />
+<label for="email">CORREO ELECTRONICO </label>
+<input type="email" name="email" /> <br />
+<br />
+<label for="URL">URL </label>
+<input type="url" name="URL" placeholder="introduce url" /> <br />
+<br />
+<label for="fecha">FECHA </label>
+<input type="date" name="fecha" /> <br />
+<br />
+<label for="tiempo">TIEMPO </label>
+<input type="time" name="tiempo" /><br />
+<br />
+<label for="fecha y hora">FECHA Y HORA </label>
+<input type="datetime" name="fecha y hora" /><br />
+<br />
+<label for="mes">MES </label>
+<input type="month" name="mes" /> <br />
+<br />
+<label for="semana">SEMANA </label>
+<input type="week" name="semana" /> <br />
+<br />
+<label for="numero"> NUMERO (min -10, max 10) </label>
+<input type="number" id="quantity" name="numero" min="-10" max="10" /> <br />
+<br />
+<label for="tel">TELEFONO </label>
+<input type="tel" name="tel" /> <br />
+<br />
+<label for="busqueda">BUSQUEDA </label>
+<input type="search" name="busqueda" /> <br />
+<br />
+<label for="color"> COLOR </label>
+<input type="color" name="color" /> <br />
+<br />
+
+<!-- el evento click del boton aceptar
+   distara la funcion "monstrarMensaje"-->
+<!--si uno una funcion que tiene argumentos (), 
+    se los paso dentro del parentesis ()-->
+<button (click)="sumaEdad(18)">ACEPTAR</button>
+<br />
+<h5>{{ nombre }}</h5>
+<h4>{{ edad }}</h4>
+
+
+
+<h1>{{ edad }}</h1>
+
+<button (click)="cambiar_edad('juan', 20)">Cambiar edad</button>
+<br />
+<h2>{{ nombre1 }}</h2>
+<h1>{{ edad }}</h1>
+
+<br />
+<br />
+<hr />
+
+<h1>{{ nombre2 }}</h1>

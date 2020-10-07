@@ -1,0 +1,102 @@
+<!--Relacion entre atributos de .html y variables del .ts-->
+<!--si el atributo está entre corchetes ([]) el copilador 
+  entiende que el valor representa una variable del .ts-->
+
+  <a href="https://www.google.com" [target]="nueva_ventana">Ir a google</a>
+  <img [src]="imagen" alt="img lamparita" width="50" height="50" />
+  
+  <div class="texto-completo">
+    <!--La relación entre texto de las etiquetas y variables del .ts-->
+    <!--cuando paso informacion del .ts al .html utilizo la notacion 
+      mustache (doble llave) {{}}-->
+    <h1 class="titulo-rojo">
+      <b>{{ titulo }}</b>
+    </h1>
+  
+    <h3 class="dato-libro">Datos del libro</h3>
+    <!--"ul" tira listado-->
+    <!--"ol" tira listado ordenado por numero-->
+    <!--"li" siempre se matiene, pq es un item de la lista.
+  Actua como item con "UL" y como numero en "OL"-->
+    <ul type="circle">
+      <li>
+        <span class="datos" li>Título:</span> HTML & CSS: Curso práctico avanzado
+      </li>
+      <br />
+      <li><span class="datos">Autor:</span> Sergio Luján Mora</li>
+      <br />
+      <li><span class="datos">Editorial:</span> Publicaciones Altaria</li>
+      <br />
+      <li><span class="datos">Año de publicación:</span> 2015</li>
+      <br />
+      <li><span class="datos">ISBN:</span> {{ numero_isbn }}</li>
+      <br />
+    </ul>
+  
+    <h3 class="dato-libro">Descripción del libro</h3>
+    <p>
+      los inicios de <b>Internet</b> se remontan a los años sesenta, no ha sido
+      hasta los años noventa cuando, gracias a la <b>Web</b> , se ha extendido su
+      uso por todo el mundo. En pocos años, la <b>Web</b> ha evolucionado
+      enormemente: se ha pasado de páginas sencillas, con pocas imágenes y
+      contenidos estáticos que eran visitadas por unos pocos usuarios a páginas
+      complejas, con contenidos dinámicos que provienen de bases de datos y que
+      son visitadas por miles de usuarios al mismo tiempo.
+    </p>
+    <p>
+      Todas las páginas están internamente construidas con la misma tecnología,
+      con el Lenguaje de marcas de hipertexto (
+      <span class="fondo-negro">Hypertext Markup Language, HTML</span> ) y con las
+      Hojas de estilo en cascada (
+      <span class="fondo-negro">Cascading Style Sheets, CSS</span> )
+    </p>
+  
+    <p>
+      Este libro es adecuado para cualquiera que tenga interés en aprender a
+      desarrollar sus propias páginas web. No son necesarios conocimientos previos
+      para aprender con este libro, lo úico que es necesario es saber utilizar un
+      ordenador y saber navegar por la Web.
+    </p>
+  
+    <h3 class="dato-libro">Contenido del libro</h3>
+  
+    El contenido de este libro se estructura en tres apartados bien diferenciados:
+  
+    <ul>
+      <li>
+        En la primera parte del libro se trabajan conceptos generales que son
+        necesarios para poder desarrollar páginas web;se explican conceptos de
+        estructura física y estructura lógica (o estructura de navegación) de un
+        sitio web. Se detalla cómo influye la estructura física en las
+        <span class="fondo-negro">URL</span> o direcciones que se emplean a la
+        hora de crear los enlaces de un sitio web. Pasando por el concepto de
+        "estándar web", un término general que se emplea para referirse a los
+        estándares que define su funcionamiento como
+        <span class="fondo-negro"> HTML</span> y
+        <span class="fondo-negro"> CSS </span>, empleados para el desarrollo de
+        las páginas web en el lado del cliente.
+      </li>
+      <li>
+        En la segunda parte se trabaja con <span class="fondo-negro">HTML</span> .
+        Partiendo de la estructura básica de una página web, se explican las
+        etiquetas de <span class="fondo-negro">HTML</span> que se utilizan para
+        definir el texto, los enlaces, las listas, las tablas, los formularios y
+        los elementos multimedia.
+      </li>
+      <li>
+        En la tercera y última parte se explica
+        <span class="fondo-negro">CSS</span>, el lenguaje que se emplea para
+        definir el formato y la presentación de una página web. Se explica cómo
+        utilizar el color, cómo definir la presentación del texto, de las tablas y
+        de los formularios; cómo realizar transformaciones y transiciones con el
+        fin de diseñar una página web.
+      </li>
+    </ul>
+  </div>
+   <button (click)="cambiar_imagen()">cambiar imagen</button>
+  <br />
+  <br />
+  <hr />
+
+
+ 

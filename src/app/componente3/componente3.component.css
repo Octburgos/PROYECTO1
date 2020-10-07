@@ -1,0 +1,28 @@
+.titulo-rojo{
+    color: red;
+    text-align: left;
+  }
+  
+  .dato-libro{
+    color: darkred; 
+    text-align: left;
+  }
+  
+  .fondo-negro{
+    background-color: black;
+    color: white;
+    font-style: italic;
+  }
+  
+  .texto-completo{
+    background-color: aquamarine;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .datos{
+    color: green;
+    font-weight: bold;
+  }
+  
+    
